@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>反编译工具JAD | Mark的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="反编译工具JAD–Eclipse配置JADJAD是什么东西，不多解析，自己百度，谷歌。下面直接上主题。  
+1.安装包的准备1)jad158g.win.zip,下载地址2)eclipse的插件：net.sf.jadeclipse_3.3.0.jar,下载地址  
+2.安装过程1)解压jad158g.win.zip，解压后有jad.exe，把该.exe文件放在jdk的安装目录下的bin下  
+2)把">
+<meta property="og:type" content="article">
+<meta property="og:title" content="反编译工具JAD">
+<meta property="og:url" content="http://www.mhuiq.com/2014/12/12/反编译工具JAD-Eclipse配置JAD/index.html">
+<meta property="og:site_name" content="Mark的博客">
+<meta property="og:description" content="反编译工具JAD–Eclipse配置JADJAD是什么东西，不多解析，自己百度，谷歌。下面直接上主题。  
+1.安装包的准备1)jad158g.win.zip,下载地址2)eclipse的插件：net.sf.jadeclipse_3.3.0.jar,下载地址  
+2.安装过程1)解压jad158g.win.zip，解压后有jad.exe，把该.exe文件放在jdk的安装目录下的bin下  
+2)把">
+<meta property="og:updated_time" content="2015-08-29T13:45:34.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="反编译工具JAD">
+<meta name="twitter:description" content="反编译工具JAD–Eclipse配置JADJAD是什么东西，不多解析，自己百度，谷歌。下面直接上主题。  
+1.安装包的准备1)jad158g.win.zip,下载地址2)eclipse的插件：net.sf.jadeclipse_3.3.0.jar,下载地址  
+2.安装过程1)解压jad158g.win.zip，解压后有jad.exe，把该.exe文件放在jdk的安装目录下的bin下  
+2)把">
+  
+  
+    <link rel="icon" href="/logo.jpg">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+	
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?90f90e5e9aa46403db2d1e5f7c291405";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+  
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<div class="profilepic">
+			<img src="http://ww4.sinaimg.cn/large/005yyi5Jjw1enadahcxubj305k05k0sq.jpg">
+		</div>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Mark</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">程序猿，IT民工</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud">
+						<a href="/tags/JAD-Eclipse-反编译/" style="font-size: 10px;">JAD,Eclipse,反编译</a> <a href="/tags/Struts2升级/" style="font-size: 10px;">Struts2升级</a> <a href="/tags/Struts2漏洞/" style="font-size: 10px;">Struts2漏洞</a> <a href="/tags/杯子问题/" style="font-size: 10px;">杯子问题</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					毕业于华南师范大学软件工程,现在某金融机构当程序员。
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay"></div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img src="http://ww4.sinaimg.cn/large/005yyi5Jjw1enadahcxubj305k05k0sq.jpg">
+			</div>
+
+			<hgroup>
+			  <h1 class="header-author"><a href="/">Mark</a></h1>
+			</hgroup>
+			
+			<p class="header-subtitle">程序猿，IT民工</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <article id="post-反编译工具JAD-Eclipse配置JAD" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/12/12/反编译工具JAD-Eclipse配置JAD/" class="article-date">
+  	<time datetime="2014-12-12T12:28:01.000Z" itemprop="datePublished">12月 12 2014</time>
+</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAD-Eclipse-反编译/">JAD,Eclipse,反编译</a></li></ul>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      反编译工具JAD
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="反编译工具JAD–Eclipse配置JAD">反编译工具JAD–Eclipse配置JAD</h1><p>JAD是什么东西，不多解析，自己百度，谷歌。下面直接上主题。  </p>
+<h2 id="1-安装包的准备">1.安装包的准备</h2><p>1)jad158g.win.zip,<a href="http://www.varaneckas.com/jad/" target="_blank" rel="external">下载地址</a><br>2)eclipse的插件：net.sf.jadeclipse_3.3.0.jar,<a href="http://sourceforge.net/projects/jadclipse/" target="_blank" rel="external">下载地址</a>  </p>
+<h2 id="2-安装过程">2.安装过程</h2><p>1)解压jad158g.win.zip，解压后有jad.exe，把该.exe文件放在jdk的安装目录下的bin下  </p>
+<p>2)把net.sf.jadeclipse_3.3.0.jar放在Eclipse的plugins下  </p>
+<p>3)重启Eclipse<br>配置大概完成了，但是现在还不能正常打开.class的文件，我们需要把.class的文件设置默认打开方式<br>具体配置过程如下：<br>1.点击Windows –&gt; Preference 打开Preference窗口<br>2.在Preference窗口的左侧菜单依次点击 General –&gt; Editors –&gt; File Associations<br>3.点击<em>.class 若在下面Associated editors框中有JadClipse Class File Viewer，则选中设为默认值，若没有则在这个框的右边点击Add，找到JadClipse Class File Viewer，选中，并设为默认<br>4.点击</em>.class without source ，跟步骤3一样。<br>配置完成，现在可以使用了。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/12/12/100层楼两个杯子找临碎点/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">&lt;</strong>
+      <div class="article-nav-title">
+        
+          100层楼两个杯子找临碎点
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/12/10/Struts2升级/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Struts2升级</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 Mark
+    	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <script src="/js/main.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>

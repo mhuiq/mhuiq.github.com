@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>100层楼两个杯子找临碎点 | Mark的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="首先，我们以10为区间，则得出（1,10）（11,20）（21,30）（31,40）（41,50）（51，60）（61,70）（71,80）（81,90）（91,100）则最大的需要20次，具体的方法是：先从10层摔下，若不碎，则从第二十层再摔，如此内推，我们可以找到一个临界区间，如（51,60），我们再从51开始，一层一层的往下摔，摔碎的那一点是临界点，则这样平均少于20次。  
+通过这个方法，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="100层楼两个杯子找临碎点">
+<meta property="og:url" content="http://www.mhuiq.com/2014/12/12/100层楼两个杯子找临碎点/index.html">
+<meta property="og:site_name" content="Mark的博客">
+<meta property="og:description" content="首先，我们以10为区间，则得出（1,10）（11,20）（21,30）（31,40）（41,50）（51，60）（61,70）（71,80）（81,90）（91,100）则最大的需要20次，具体的方法是：先从10层摔下，若不碎，则从第二十层再摔，如此内推，我们可以找到一个临界区间，如（51,60），我们再从51开始，一层一层的往下摔，摔碎的那一点是临界点，则这样平均少于20次。  
+通过这个方法，">
+<meta property="og:updated_time" content="2014-12-12T12:44:36.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="100层楼两个杯子找临碎点">
+<meta name="twitter:description" content="首先，我们以10为区间，则得出（1,10）（11,20）（21,30）（31,40）（41,50）（51，60）（61,70）（71,80）（81,90）（91,100）则最大的需要20次，具体的方法是：先从10层摔下，若不碎，则从第二十层再摔，如此内推，我们可以找到一个临界区间，如（51,60），我们再从51开始，一层一层的往下摔，摔碎的那一点是临界点，则这样平均少于20次。  
+通过这个方法，">
+  
+  
+    <link rel="icon" href="/logo.jpg">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+	
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?90f90e5e9aa46403db2d1e5f7c291405";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+  
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<div class="profilepic">
+			<img src="http://ww4.sinaimg.cn/large/005yyi5Jjw1enadahcxubj305k05k0sq.jpg">
+		</div>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Mark</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">程序猿，IT民工</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud">
+						<a href="/tags/JAD-Eclipse-反编译/" style="font-size: 10px;">JAD,Eclipse,反编译</a> <a href="/tags/Struts2升级/" style="font-size: 10px;">Struts2升级</a> <a href="/tags/Struts2漏洞/" style="font-size: 10px;">Struts2漏洞</a> <a href="/tags/杯子问题/" style="font-size: 10px;">杯子问题</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					毕业于华南师范大学软件工程,现在某金融机构当程序员。
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay"></div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img src="http://ww4.sinaimg.cn/large/005yyi5Jjw1enadahcxubj305k05k0sq.jpg">
+			</div>
+
+			<hgroup>
+			  <h1 class="header-author"><a href="/">Mark</a></h1>
+			</hgroup>
+			
+			<p class="header-subtitle">程序猿，IT民工</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <article id="post-100层楼两个杯子找临碎点" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/12/12/100层楼两个杯子找临碎点/" class="article-date">
+  	<time datetime="2014-12-12T12:43:03.000Z" itemprop="datePublished">12月 12 2014</time>
+</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/杯子问题/">杯子问题</a></li></ul>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      100层楼两个杯子找临碎点
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>首先，我们以10为区间，则得出（1,10）（11,20）（21,30）（31,40）（41,50）（51，60）（61,70）（71,80）（81,90）（91,100）则最大的需要20次，具体的方法是：先从10层摔下，若不碎，则从第二十层再摔，如此内推，我们可以找到一个临界区间，如（51,60），我们再从51开始，一层一层的往下摔，摔碎的那一点是临界点，则这样平均少于20次。  </p>
+<p>通过这个方法，我们可以知道，平均次数少于20次，则最优的结果毕竟是不会超过20次的。我们做这样的考虑，每一次比较，我们都让这一次比较的次数抵消掉前一次比较过的次数，亦即区间的范围逐渐减小，如（1,10）（11,19）（20,27）…（54,55）56 57 …. 100，这到了第56以后就不能保证该次比较的次数抵消掉上一次比较过的次数，这不成立，我们接着用12,13比较也不行，当我们用14时，我们可以得出范围为（1,14）（15，27）（28,39）… （96,99）100，则可以得出少于14次。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2014/12/12/反编译工具JAD-Eclipse配置JAD/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">反编译工具JAD</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 Mark
+    	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <script src="/js/main.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
